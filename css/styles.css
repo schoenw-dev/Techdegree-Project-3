@@ -44,10 +44,13 @@ legend{
 
 }
 
-input:focus{
+input:focus,
+textarea:focus{
   border: solid #30475e;
 
 }
+
+
 
 input,
 select{
@@ -233,5 +236,30 @@ select  {
 
 
   }
+
+  .row{
+    flex-direction: row;
+
+  }
+
+  .contact-label{
+    padding-top: 15px;
+    width: 25%;
+  }
+
+  .primary-fieldset input,
+  select{
+    width: 75%
+  }
+
+  .zip-input{
+    width: 100%
+  }
+
+  #zip{
+    justify-content: flex-start;
+    width: 20%;
+  }
+
 
 }
