@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up for The Code Review</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <h1>The Code Review</h1>
+      </div>
+      <div class="call-to-action">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </header>
+    <main>
+        <form>
+              <fieldset class="primary-fieldset">
+                <legend>Contact Information</legend>
+
+                <div class="row">
+                  <label class="contact-label" for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="required" required>
+                </div>
+
+                <div class="row">
+                  <label class="contact-label" for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="required" required>
+                </div>
+
+                <div class="row">
+                  <label class="contact-label" for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="row">
+                  <label class="contact-label" for="address">Street Adress</label>
+                  <input type="text" id="address" name="adress">
+                </div>
+
+                <div class="row">
+                  <label class="contact-label" for="city">City</label>
+                  <input type="text" id="city" name="city">
+                </div>
+                <div class="row">
+                  <label class="contact-label" for="state">State</label>
+                  <select id="state" name="state">
+                    <option value="empty"> - Choose State - </option>
+                    <option value="arizona">Arizona</option>
+                    <option value="california">California</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="kentucky">Kentucky</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="montana">Montana</option>
+                    <option value="new-york">New York</option>
+                    <option value="oregon">Oregon</option>
+                    <option value="tennesee">Tennesee</option>
+                    <option value="texas">Texas</option>
+                    <option value="wyoming">Wyoming</option>
+                  </select>
+                </div>
+
+                <div class="row zip-input">
+                  <label class="contact-label" for="zip">Zip Code</label>
+                  <input type="number" id="zip" name="zip">
+                </div>
+              </fieldset>
+
+           <fieldset class="secondary-fieldset">
+              <legend id="news-legend">Newsletter</legend>
+              <p>Select the newsletters you would like to recieve</p>
+                <div class="check-row">
+                    <input type="checkbox" id="html" value="news_html" name="user_news">
+                    <label class="light" for="html">HTML News</label>
+                </div>
+
+                <div class="check-row">
+                    <input type="checkbox" id="css" value="news_css" name="user_news">
+                    <label class="light" for="css">CSS News</label>
+                </div>
+
+                <div class="check-row">
+                    <input type="checkbox" id="javascript" value="news_javascript" name="user_news">
+                    <label class="light" for="javascript">Javascript News</label>
+                </div>
+                <p>Newsletter format</p>
+                <div class="rad-row">
+                  <input type="radio" id="html_sel" name="radio-format" value="format_html">
+                  <label for="html_sel">HTML</label>
+                </div>
+
+                <div class="rad-row">
+                  <input type="radio" id="plain_sel" name="radio-format" value="format_pt">
+                  <label for="plain_sel">Plain text</label>
+                </div>
+
+                <div class="text-row">
+                  <label for="comments">Other topics you'd like to hear about</label>
+                  <textarea name="comments" id="comments" rows="8" cols="80"></textarea>
+                  <button type="submit" value="submit">Sign Up</button>
+                </div>
+            </fieldset>
+        </form>
+        <p id="copy">Copyright The Code Review</p>
+      </main>
+    </body>
+</html>
